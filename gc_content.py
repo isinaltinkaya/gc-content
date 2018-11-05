@@ -1,8 +1,8 @@
 from itertools import repeat
 import numpy as np
 
-def gc_content(alleles, values):  # .snp data, .geno data
-    df = list(repeat(0, 1150639)) # Autosomal SNP count
+def gc_content(alleles, values):  # columns from .snp data, .geno data
+    df = list(repeat(0, 1150639)) # SNP count
     gnc = {"G", "C"}
     for al, ind in zip(alleles, values):
         dff = []
