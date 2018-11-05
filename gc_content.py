@@ -5,7 +5,7 @@ def gc_content(alleles, values):  # columns from .snp data, .geno data
     df = list(repeat(0, 1150639)) # SNP count
     gnc = {"G", "C"}
     for al, ind in zip(alleles, values):
-        dff = []
+	dff = []
 	for snpval in ind:
             if al[0] in gnc and al[1] in gnc:
                 if snpval == "2":
